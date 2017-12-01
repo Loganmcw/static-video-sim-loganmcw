@@ -1,22 +1,77 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
     <meta charset="UTF-8">
     <title> Logan's Static Video Simulator Assessment </title>
-    <link rel="stylesheet" href="main.css" />å
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
 </head>
 
 <body>
+    <header>
+        <h1>The Web's Best Code Tutorials</h1>
+    </header>
     <main>
-        <article>
-        </article>
-        <section>
+        <div class="listDiv">
+            <p class="listItems">
+                <video width="640" height="360" controls>
+                    <source src="vid1.mp4" type "video/mp4"> Your browser does not support the video tag.
+                </video>
+            </p>
+            <p class="listItems">
+                <video width="640" height="360" controls>
+                    <source src="vid2.mp4" type "video/mp4"> Your browser does not support the video tag.
+                </video>
+            </p>
+            <p class="listItems">
+                <video width="640" height="360" controls>
+                    <source src="vid3.mp4" type "video/mp4"> Your browser does not support the video tag.
+                </video>
+            </p>
+            <p class="listItems">
+                <video width="640" height="360" controls>
+                    <source src="vid4.mp4" type "video/mp4"> Your browser does not support the video tag.
+                </video>
+            </p>
+            <p class="listItems">
+                <video width="640" height="360" controls>
+                    <source src="vid1.mp4" type "video/mp4"> Your browser does not support the video tag.
+
+                </video>
+            </p>
+            <p class="listItems">
+                <video width="640" height="360" controls>
+                    <source src="vid2.mp4" type "video/mp4"> Your browser does not support the video tag.
+                </video>
+            </p>
+        </div>
+        <section id="popup" style="display: none">
+            <video width="815" height="460" controls>
+                <source src="kittens-puppies.mp4" type "video/mp4"> Your browser does not support the video tag.
+            </video>
         </section>
-        <footer>
-        </footer>
+        <script>
+            function popFunction() {
+                console.log("hit function", document.getElementById('popup').style.display)
+                var videoToggle;
+                if (document.getElementById('popup').style.display == "none") {
+                    videoToggle = "inline"
+                } else if (document.getElementById('popup').style.display = "inline") {
+                    videoToggle = "none"
+                }
+                document.getElementById('popup').style.display = videoToggle;
+            }
+        </script>
     </main>
+    <br />
+    <footer>
+        <button type="button" onclick="popFunction()">Random Video</button>
+        <audio controls autoplay>
+            <source src="mpthreetest.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+        </audio>
+    </footer>
 </body>
 
 </html>

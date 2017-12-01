@@ -1,0 +1,78 @@
+body {
+height: 100%;
+width: 100%
+}
+
+body header {
+width: 100%;
+height: 10%;
+display: flex;
+position: fixed;
+top: 0px;
+justify-content: center;
+align-items: center;
+background-color: rgb(119, 119, 253);
+z-index: 1;
+}
+
+header > h1 {
+    display: flex;
+    font-size: 50px;
+    font-weight: bold;
+    color: rgb(73, 72, 72)
+}
+
+header + main {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top:15%;
+    bottom: 100px;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+.listDiv {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+flex-direction: row-reverse
+}
+
+.listItems {
+border: 1px solid black;
+margin-bottom: 100px;
+margin-left: 50px;
+margin-right: 50px;
+}
+
+#popup {
+    display: flex;
+    position: fixed;
+    padding: 60px;
+    background-color: rgb(22, 22, 73);
+    left: 21.5%;
+    top: 22%;
+}
+
+footer {
+padding: 8px;
+    height: 2.5%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    background-color: rgb(40, 40, 75);
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    display: flex;
+    height: 25px;
+    width: 100px;
+    justify-content: center;
+}
+
+audio {
+    display: none
+}
